@@ -351,7 +351,8 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
 
 
 final List<Widget> imageSliders = imgList
-    .map((item) => Flexible(
+    .map((item) => Draggable(
+  feedback:Container(),
   child: Container(
       height:3000,
     width:1000,
